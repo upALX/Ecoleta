@@ -1,0 +1,128 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#page-create-point header{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px;
+    font-weight: 700;
+}
+#page-create-point header a{
+    align-items: center;
+    display: flex;
+    color: var(--title-color);
+}
+#page-create-point header a span{ 
+    margin-left: 16px;
+    background-image: url('../img/arrow-left.svg');
+    display: flex;
+    height: 25px;
+    width: 20px;    
+}
+form{
+    background-color: #fff;
+    margin: 80px auto;
+    padding: 64px;
+    border-radius:8px;
+    max-width: 730px;
+}
+form h1{
+    font-size: 36px;
+}
+form fieldset{
+    margin-top: 64px;
+    border: none;
+}
+form legend{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+form legend h2{
+    font-size: 24px;
+}
+form legend span{
+    color: var(--title-color);
+    font-size: 14px;
+}
+form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    flex: 1;
+}
+form .field-group{
+    display: flex;     
+}
+form input, select{
+    background: var(--second-color);
+    border: none;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+form div select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+form .field-group .field + .field{ /*O "+" .field está pegando todos os field que vem depois de um field*/
+    margin-left: 24px;
+}
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 40px;
+    transition: 300ms;
+}
+form button:hover{
+    background-color: #2fb86e;
+}
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+.items-grid li{
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    display:  flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;/*alinha e da espaço vertical nesse caso*/
+    list-style: none;
+    text-align: center;
+    padding: 32px 24px 16px;
+}
+.items-grid li span{
+    align-items: center;
+    display: flex;
+    color: vat(--tittle-color);
+    flex: 1;
+    margin-top: 12px;
+}
+.items-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+.items-grid li img, .items-grid li span{
+    pointer-events: none;
+}
