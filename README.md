@@ -5,13 +5,13 @@
 <h1 align="center"> Tecnologies used </h1>
 
 <p align="center">
-  <a href=""> 
+  <a href="https://www.w3schools.com/html/"> 
     <img alt="" src="https://img.shields.io/badge/HTML-V%20%3D%3D%205-purple"> 
   </a>
-  <a href=""> 
+  <a href="https://www.w3schools.com/css/"> 
     <img alt="" src="https://img.shields.io/badge/CSS-V%20%3D%3D%203-purple"> 
   </a>
-  <a href=""> 
+  <a href="https://www.javascript.com/"> 
     <img alt="" src="https://img.shields.io/badge/JavaScript-%3E%3D%20ES6%2B-purple"> 
   </a>
   <a href="https://mozilla.github.io/nunjucks/getting-started.html"> 
