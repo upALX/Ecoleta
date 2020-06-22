@@ -2,7 +2,7 @@
   <img alt="Semana do próximo nível" src="https://cdn.dribbble.com/users/1986561/screenshots/11226328/nlw_dribbble.png" width="400">
 </p>
 
-<h1 align="center"> Tecnologies used </h1>
+<h1 align="center"> Technologies used </h1>
 
 <p align="center">
   <a href="https://www.w3schools.com/html/"> 
