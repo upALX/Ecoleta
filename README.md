@@ -32,7 +32,7 @@
 </p>
 <p align="center">
   <a href="https://nodemon.io/"> 
-    <img alt="" src="https://img.shields.io/badge/Nodemoon-tool-purple"> 
+    <img alt="" src="https://img.shields.io/badge/Nodemoon-Tool-purple"> 
   </a>  
 </p>
 
