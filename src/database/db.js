@@ -1,53 +1,62 @@
-//importar a dependência do sqlite3
-const sqlite3 = require("sqlite3").verbose() //isso está retornando um objeto
+const sqlite3 = require('sqlite3').verbose()
+const database = new sqlite3.Database('./src/database/database.db')
+module.exports = database
 
-//criando o objeto que irá fazer operações no banco de dados
-const db = new sqlite3.Database("./src/database/database.db")
-//utilizando o objeto de banco de dados para nosssa operações 
-bd.serialize(() => {
-    //criando uma tabela com comando SQL
-    db.run(`
+//database
+database.serialize(() =>{
+/*
+    database.run(`
         CREATE TABLE IF NOT EXISTS places(
-            id INTERGER PRIMARY KEY AUTOINCREMENT,
-            image TEXT,
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT,
+            image TEXT,
             address TEXT,
             address2 TEXT,
             state TEXT,
             city TEXT,
             items TEXT
         );
-    `)
-    //inserir dados na tabela
-const query = `
+    `)    
+    const query = `
     INSERT INTO places (
-        image,
-        name,
+        image, 
+        name, 
         address,
         address2,
         state,
         city,
         items
-    ) VALUES (?,?,?,?,?,?,?);        
-    `
-const values = [
-    "https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    "Colectoria",
-    "Guilherme Gemballa, Jardim América", 
-    "Número 260", 
-    "Santa Catarina",
-    "Rio do Sul",
-    "Resíduos eletronicos e lâmpadas"
-]
-    function adterInsertData(err){
-        if(err){
-            return console.log(err)
-        }
-        console.log("Cadastrado com sucesso!")
-        console.log("this") //esse this referência a resposta do run()
-    }
-    db.run(query, values, afterInsertData)
-        //consultar os dados da tabela
+    ) VALUES (?,?,?,?,?,?,?);`
 
-        //deletar um dado da tabela
+    const values = [
+        "https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "Pappersider",
+        "Guilherme Gemballa, Jardim América",
+        "Número 260",
+        "Santa Catarina",
+        "Rio do Sul",
+        "Residuos eletronicos, lâmpadas"
+    ]
+    function afterInsertData(error){
+        if(error){
+            return console.log(error)
+        }
+        console.log('sucessful cadaster!')
+        console.log(this)
+    }
+    database.run(query, values, afterInsertData)
+        database.run(`DELETE FROM places WHERE id = ?`, [5], function(error){
+        if(error){
+            console.log(error)
+        }
+        console.log('Deleted!')
     })
+ Command to delete dates  
+   database.all(`SELECT * FROM places`, function(error, rows){
+        if(error){
+            console.log(error)
+        }
+        console.log('Your registers: ')
+        console.log(rows)
+    }) */
+})

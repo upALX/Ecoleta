@@ -1,25 +1,70 @@
 const express = require("express")
 const serverApp = express()
+const database = require("./database/db.js")
 
-//Configurando a pasta publica
 serverApp.use(express.static("public"))
+serverApp.use(express.urlencoded({extended: true}))
 
-//utilizando template engine: nunjucks
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: serverApp,
     noCache: true
 })
-//configurando os caminhos da minha aplicação
-serverApp.get("/", (require, response) => {
-    return response.render("index.html") // esse ".render" é por conta do nunjucks. E como temos o nunjucks para renderizar, não precisamos fazer o caminho inteiro de pastas.  Temos o express ligado ao nunjucks.
-})
-serverApp.get("/create-point", (require, response) =>{
-    return response.render("create-point.html")  
-})//aqui estou fazendo uma requisição de rota, não de arquivos
-serverApp.get("/search", (require, response) =>{
-    return response.render("search-results.html")  
+
+serverApp.get("/", (req, response) => {
+    return response.render("index.html") 
 })
 
-//Startando o servidor
-serverApp.listen(3000) //aqui é a porta onde o servidor vai abrir a aplicação
+serverApp.get("/create-point", (req, response) => {
+    return response.render("create-point.html")
+})
+
+serverApp.post("/savepoint", (req, response) => {
+    const query = `
+    INSERT INTO places (
+        image, 
+        name, 
+        address,
+        address2,
+        state,
+        city,
+        items
+    ) VALUES (?,?,?,?,?,?,?);`
+
+    const values = [
+        req.body.image,
+        req.body.name,
+        req.body.address,
+        req.body.address2,
+        req.body.state,
+        req.body.city,
+        req.body.items
+    ]
+    function afterInsertData(error){
+        if(error){
+            return console.log(error)
+            return response.send("Erro no cadastro!")
+        }
+        console.log('Cadastrado com sucesso')
+        console.log(this)
+            return response.send("create-point.html", {saved: true})
+    }
+    database.run(query, values, afterInsertData)
+})
+
+
+serverApp.get("/search", (req, response) => {
+    const search = req.query.search
+    if(search == ""){
+        return response.render("search-results.html", {total: 0})
+    }
+        database.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(error, rows){
+            if(error){
+                console.log(error)
+            }
+        const total = rows.length
+        return response.render("search-results.html", {places: rows, total})
+        })
+})
+
+serverApp.listen(3000)

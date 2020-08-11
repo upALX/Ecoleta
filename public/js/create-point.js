@@ -16,8 +16,8 @@ function getCities(event){
     const indexOfSelectedState = event.target.selectedIndex
     stateinput.value = event.target.options[indexOfSelectedState].text
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
-    citySelect.disabled = true //estou bloqueando o campo a cada consulta
-    citySelect.innerHTML= '' //estou limpando o campo a cada consulta
+    citySelect.disabled = true 
+    citySelect.innerHTML= '' 
     fetch(url)
     .then(res => res.json())
     .then(cities => {
@@ -30,12 +30,6 @@ function getCities(event){
 document.querySelector('select[name=uf]')
     .addEventListener("change", getCities)
 
-var cadaster = document.querySelector('button.good-work')
-    .addEventListener("click", goodWork => { 
-        //ajustar
-        alert('Muito bem! Vocâ cadastrou um novo local.')
-    })
-//items de coleta
 const itemsToCollect = document.querySelectorAll(".items-grid li")
     for(const item of itemsToCollect){
         item.addEventListener("click", handleSelectedItem)
@@ -43,17 +37,15 @@ const itemsToCollect = document.querySelectorAll(".items-grid li")
 
 const collectedItems = document.querySelector('input[name=items]')
 var selectedItems = []
-//adicionando e removendo classes
 function handleSelectedItem(event){
     const itemLi = event.target
         itemLi.classList.toggle("selected")
     const itemId = itemLi.dataset.id 
-    //verifique se existe item selecionado
-    //se sim, pegar os items selecionados
+    console.log('ITEM ID: ', itemId)
     const alreadySelected = selectedItems.findIndex(item => {
             return item == itemId
     })
-    //se já estiver selecionado, tirar da seleção 
+    
     if(alreadySelected >= 0 ){
         const filteredItems = selectedItems.filter(item =>  {
             const itemIsDifferent = item != itemId
@@ -63,9 +55,5 @@ function handleSelectedItem(event){
     }else{
         selectedItems.push(itemId)
     }
-    //se não tiver selecionado, adicione a selação
-    console.log(selectedItems)
-    //atualize o campo escondido(input type="hidden")com os items selecionados
     collectedItems.value = selectedItems
 }
-
