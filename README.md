@@ -1,6 +1,8 @@
 <p align="center">
-  <img alt="Semana do próximo nível" src="https://cdn.dribbble.com/users/1986561/screenshots/11226328/nlw_dribbble.png" width="400">
+  <img alt="Home page" src="https://i.ibb.co/YBmT6kj/ECOLETA-HOME.png" width="600">
 </p>
+
+
 
 <h1 align="center"> Technologies used </h1>
 
