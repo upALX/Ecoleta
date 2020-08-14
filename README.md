@@ -6,7 +6,7 @@
   <img alt="Semana do próximo nível" src="https://i.ibb.co/0BrWcFZ/ECOLETA-CADASTER.png" width="450" height="255">
 </p>
 <p align="center">
-  
+  <img alt="Semana do próximo nível" src="https://i.ibb.co/yYpWmjL/ECOLETA-SEARCH.png" width="300">
 </p>
 <p align="center">
   
