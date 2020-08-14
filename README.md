@@ -1,6 +1,15 @@
 <p align="center">
   <img alt="Home page" src="https://i.ibb.co/YBmT6kj/ECOLETA-HOME.png" width="1000">
 </p>
+<p align="center">
+  
+</p>
+<p align="center">
+  
+</p>
+<p align="center">
+  
+</p>
 
 <h1 align="center"> Technologies used </h1>
 
