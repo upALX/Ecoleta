@@ -9,8 +9,9 @@
   <img alt="Semana do próximo nível" src="https://i.ibb.co/yYpWmjL/ECOLETA-SEARCH.png" width="450" height="247.5">
   <img alt="Semana do próximo nível" src="https://i.ibb.co/smvzRVY/Search-PA-ECOLETA.png" width="450">
 </p>
+
 <p align="center">
-  
+  <img alt="Semana do próximo nível" src="https://i.ibb.co/Qn8CkbW/Ecoleta-not-found.png" width="1000">
 </p>
 
 <h1 align="center"> Technologies used </h1>
