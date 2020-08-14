@@ -2,8 +2,8 @@
   <img alt="Home page" src="https://i.ibb.co/YBmT6kj/ECOLETA-HOME.png" width="1000">
 </p>
 <p align="center">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/fH41qzP/Ecoleta-cadastro2.png" width="500">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/0BrWcFZ/ECOLETA-CADASTER.png" width="500">
+  <img alt="Semana do próximo nível" src="https://i.ibb.co/fH41qzP/Ecoleta-cadastro2.png" width="450">
+  <img alt="Semana do próximo nível" src="https://i.ibb.co/0BrWcFZ/ECOLETA-CADASTER.png" width="450" height="255">
 </p>
 <p align="center">
   
