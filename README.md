@@ -2,7 +2,7 @@
   <img alt="Home page" src="https://i.ibb.co/YBmT6kj/ECOLETA-HOME.png" width="1000">
 </p>
 <p align="center">
-  
+  <img alt="Semana do próximo nível" src="https://i.ibb.co/fH41qzP/Ecoleta-cadastro2.png" width="300">
 </p>
 <p align="center">
   
