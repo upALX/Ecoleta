@@ -35,6 +35,8 @@
   </a>
 </p>
 
+---
+
 <p align="center">
   <a href="https://nodejs.org/en/"> 
     <img alt="" src="https://img.shields.io/badge/Node-%3E%3D%2012.18.0-purple"> 
