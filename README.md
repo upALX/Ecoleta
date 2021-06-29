@@ -34,9 +34,6 @@
     <img alt="" src="https://img.shields.io/badge/Nunjucks-Engine-purple"> 
   </a>
 </p>
-
----
-
 <p align="center">
   <a href="https://nodejs.org/en/"> 
     <img alt="" src="https://img.shields.io/badge/Node-%3E%3D%2012.18.0-purple"> 
@@ -48,9 +45,6 @@
     <img alt="" src="https://img.shields.io/badge/NPM-%3E%3D%206.14.4-purple"> 
   </a>
 </p>
-
----
-
 <p align="center">
   <a href="https://nodemon.io/"> 
     <img alt="" src="https://img.shields.io/badge/Nodemoon-Tool-purple"> 
