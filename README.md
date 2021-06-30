@@ -51,7 +51,6 @@
   </a>  
 </p>
 
----
 
 # :pushpin: Topics
  * [About this project](#rocket-about)
