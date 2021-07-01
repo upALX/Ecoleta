@@ -16,7 +16,6 @@
   <img alt="Semana do próximo nível" src="https://i.ibb.co/KXp5KRP/Results-ECOLETA.png" width="800">
 </p>
 
----
 
 <h1 align="center"> Technologies used </h1>
 
