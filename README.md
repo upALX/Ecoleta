@@ -56,7 +56,7 @@
  * [I found errors in this project! What should i do?](#bug-bugs)
  * [Which license this project use?](#closed_book-license)
  
-# :rocket: About
+# :book: About
 This repository is dedicated to learning front-end technologies: HTML, CSS, JavaScript in practice. This is being made possible thanks to the Next Level Week promoted by Rocketseat.
 
 # :bug: Bugs
