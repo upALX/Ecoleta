@@ -57,7 +57,7 @@
  * [Which license this project use?](#closed_book-license)
  
 # :book: About
-This repository is dedicated to learning front-end technologies: HTML, CSS, JavaScript in practice. This is being made possible thanks to the Next Level Week promoted by Rocketseat.
+Ecoleta is a marketplace about to places that collect waste.
 
 # :bug: Bugs
 Did you find one or more errors in this project? No problem, open an [issue](https://github.com/AlexandreALX/Next-Level-Week/issues) or solve the problem and make a [Pull request](https://github.com/AlexandreALX/Next-Level-Week/pulls). I´ll be very happy with your contribution :)
