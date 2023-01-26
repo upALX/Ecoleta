@@ -49,7 +49,6 @@
   </a>  
 </p>
 
-
 # :pushpin: Topics
  * [About this project](#rocket-about)
  * [I found errors in this project! What should i do?](#bug-bugs)
