@@ -2,18 +2,18 @@
   <img alt="Home page" src="https://i.ibb.co/YBmT6kj/ECOLETA-HOME.png" width="1000">
 </p>
 <p align="center">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/fH41qzP/Ecoleta-cadastro2.png" width="440">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/0BrWcFZ/ECOLETA-CADASTER.png" width="440" height="255">
+  <img alt="" src="https://i.ibb.co/fH41qzP/Ecoleta-cadastro2.png" width="440">
+  <img alt="" src="https://i.ibb.co/0BrWcFZ/ECOLETA-CADASTER.png" width="440" height="255">
 </p>
 <p align="center">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/yYpWmjL/ECOLETA-SEARCH.png" width="440" height="247.5">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/smvzRVY/Search-PA-ECOLETA.png" width="440">
+  <img alt="" src="https://i.ibb.co/yYpWmjL/ECOLETA-SEARCH.png" width="440" height="247.5">
+  <img alt="" src="https://i.ibb.co/smvzRVY/Search-PA-ECOLETA.png" width="440">
 </p>
 <p align="center">
   <img alt="Semana do próximo nível" src="https://i.ibb.co/Qn8CkbW/Ecoleta-not-found.png" width="1000">
 </p>
 <p align="center">
-  <img alt="Semana do próximo nível" src="https://i.ibb.co/KXp5KRP/Results-ECOLETA.png" width="800">
+  <img alt="" src="https://i.ibb.co/KXp5KRP/Results-ECOLETA.png" width="800">
 </p>
 
 
